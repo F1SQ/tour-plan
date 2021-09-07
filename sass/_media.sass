@@ -104,6 +104,7 @@
       &__item
         width: 100%
         max-width: 579px
+        padding: 0 30px 30px
         &::before,
         &::after
           display: none
@@ -139,10 +140,42 @@
   .hotel
     &-slider
       height: 250px
-
   .newsletter
     padding: 76px 0 83px 0
     &__title
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .reviews
+    padding-bottom: 50px
+    &-slider
+      max-height: 483px
+      &__button
+        top: 31px
+        &--prev
+          left: 50%
+          margin-left: -110px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -110px
+          transform: translate(50%, 0)
+
+@media only screen and (max-width: 320px)
+  .reviews
+    &__title
+      max-width: 245px
+      font-size: 18px
+      line-height: 127%
+      margin: 0 auto 42px
+    &-slider
+      &__button
+        top: 31px
+        &--prev
+          left: 50%
+          margin-left: -95px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -95px
+          transform: translate(50%, 0)
