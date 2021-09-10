@@ -54,6 +54,9 @@
     &__button
       position: absolute
       top: 50%
+      display: flex
+      justify-content: center
+      align-items: center
       transform: translateY(-50%)
       z-index: 30
       width: 30px
@@ -66,10 +69,23 @@
       background-color: transparent
       &--prev
         left: 18px
-        background-image: url(../img/arrow-prev.svg)
+        fill: $light
+        opacity: 0.9
+        &:hover
+          opacity: 1
+        &:active
+          stroke: $light
+          border: none
       &--next
         right: 18px
-        background-image: url(../img/arrow-next.svg)
+        fill: $light
+        opacity: 0.9
+        &:hover
+          opacity: 1
+        &:active
+          stroke: $light
+          border: none
+
 .swiper
   margin: 0
   &-slide
@@ -176,6 +192,8 @@
     border: none
     color: $light
     cursor: pointer
+    &:hover
+      background-color: darken($primary, 10%)
 .map
   width: 347px
   height: 213px

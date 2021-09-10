@@ -1,3 +1,6 @@
+@media only screen and ( max-width: 1440px )
+  .reviews
+    padding-bottom: 60px
 @media only screen and ( max-width: 1200px )
   .container
     max-width: 960px
@@ -9,6 +12,10 @@
       &__image
         width: 100%
         object-fit: cover
+  .card
+    &__image
+      width: 230px
+      height: 230px
 
 @media only screen and ( max-width: 1024px )
   .container
@@ -18,6 +25,10 @@
     &-slider
       width: 500px
       height: 428px
+  .card
+    &__image
+      width: 200px
+      height: 200px
 
 @media only screen and ( max-width: 992px )
   .container, .newsletter-wrapper
@@ -36,6 +47,7 @@
   .search
     &__input
       width: 340px
+
   .hotel
     &-grid
       flex-direction: column
@@ -51,6 +63,23 @@
     width: 47%
     &__frame
       width: 100%
+  .activities
+    padding: 60px 0 50px 0
+    &-wrapper
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      &__card
+        margin-bottom: 20px
+  .card
+    width: 49%
+    border-radius: 6px
+    overflow: hidden
+    &__image
+      width: 100%
+      min-width: 339px
+      height: 255px
+
 @media only screen and ( max-width: 768px )
   .container
     max-width: 700px
@@ -112,7 +141,17 @@
         margin-top: 0
       &__text
         max-width: 455px
-
+  .activities
+    &-wrapper
+      justify-content: space-evenly
+  .card
+    width: 48%
+    min-width: 255px
+    height: 255px
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
 @media only screen and (max-width: 576px)
   .navbar
     &__search, &-menu, &__user
@@ -134,7 +173,6 @@
         width: 16px
         height: 1px
         background-color: $text-color
-
   .logo
     width: 99px
   .hotel
@@ -160,6 +198,15 @@
           right: 50%
           margin-right: -110px
           transform: translate(50%, 0)
+  // .activities
+  //   &-wrapper
+  //     flex: 1 1 100%
+  .card
+    width: 92%
+    min-width: 280px
+    height: 255px
+    &__image
+      object-fit: cover
 
 @media only screen and (max-width: 320px)
   .reviews

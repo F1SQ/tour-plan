@@ -22,12 +22,12 @@
         </a>
 
         <form action="#" class="search navbar__search">
-          <input type="text" 
+          <input type="text" required
           class="search__input" 
           placeholder="Search Location">
 
           <button class="search__button">
-            <img src="/img/search.svg.svg" alt="Icon: search">
+            <img src="/img/search.svg.svg" alt="Icon: search">            
           </button>
         </form>
         <!-- /.search -->
@@ -153,8 +153,20 @@
             <!-- swiper-wrapper -->
 
             <!-- If we need navigation buttons -->
-            <div class="hotel-slider__button hotel-slider__button--prev"></div>
-            <div class="hotel-slider__button hotel-slider__button--next"></div>
+            <div class="hotel-slider__button hotel-slider__button--prev">
+              <svg width="10" height="18" viewBox="0 0 10 18"  xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="nonzero" clip-rule="inherit"
+                  d="M9.63388 0.616117C10.122 1.10427 10.122 1.89573 9.63388 2.38388L3.01777 9L9.63388 15.6161C10.122 16.1043 10.122 16.8957 9.63388 17.3839C9.14573 17.872 8.35427 17.872 7.86612 17.3839L0.366117 9.88388C-0.122039 9.39573 -0.122039 8.60427 0.366117 8.11612L7.86612 0.616117C8.35427 0.127961 9.14573 0.127961 9.63388 0.616117Z"
+                  fill-opacity="0.8" />
+              </svg>
+            </div>
+            <div class="hotel-slider__button hotel-slider__button--next">
+              <svg width="10" height="18" viewBox="0 0 10 18"  xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="nonzero" clip-rule="inherit"
+                  d="M0.366117 0.616117C0.854272 0.127961 1.64573 0.127961 2.13388 0.616117L9.63388 8.11612C10.122 8.60427 10.122 9.39573 9.63388 9.88388L2.13388 17.3839C1.64573 17.872 0.854272 17.872 0.366117 17.3839C-0.122039 16.8957 -0.122039 16.1043 0.366117 15.6161L6.98223 9L0.366117 2.38388C-0.122039 1.89573 -0.122039 1.10427 0.366117 0.616117Z"
+                  fill-opacity="0.8" />
+              </svg>
+            </div>
           
           </div>
           <!-- /.swiper -->
@@ -217,7 +229,7 @@
       <span class="newsletter-title__strong">Newsletter</span>
       </h2>
               <form action="#" class="subscribe newsletter__subscribe">
-                <input type="text" 
+                <input type="email" required
                 class="subscribe__input" 
                 placeholder="Your email address">
               
@@ -308,8 +320,19 @@
         </div>
         <!--/.swiper-wrapper-->
 
-        <button class="reviews-slider__button reviews-slider__button--prev"></button>
-        <button class="reviews-slider__button reviews-slider__button--next"></button>
+        <button class="reviews-slider__button reviews-slider__button--prev">
+          <svg width="10" height="18" viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="nonzero" clip-rule="inherit"
+              d="M9.63388 0.616117C10.122 1.10427 10.122 1.89573 9.63388 2.38388L3.01777 9L9.63388 15.6161C10.122 16.1043 10.122 16.8957 9.63388 17.3839C9.14573 17.872 8.35427 17.872 7.86612 17.3839L0.366117 9.88388C-0.122039 9.39573 -0.122039 8.60427 0.366117 8.11612L7.86612 0.616117C8.35427 0.127961 9.14573 0.127961 9.63388 0.616117Z"/>
+          </svg>
+        </button>
+        <button class="reviews-slider__button reviews-slider__button--next">
+          <svg width="10" height="18" viewBox="0 0 10 18"  xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="nonzero" clip-rule="inherit"
+              d="M0.366117 0.616117C0.854272 0.127961 1.64573 0.127961 2.13388 0.616117L9.63388 8.11612C10.122 8.60427 10.122 9.39573 9.63388 9.88388L2.13388 17.3839C1.64573 17.872 0.854272 17.872 0.366117 17.3839C-0.122039 16.8957 -0.122039 16.1043 0.366117 15.6161L6.98223 9L0.366117 2.38388C-0.122039 1.89573 -0.122039 1.10427 0.366117 0.616117Z"/>
+          </svg>
+
+        </button>
       
       </div>
       <!--/.reviews-slider-->
@@ -318,6 +341,57 @@
   </section>
   <!-- /.reviews -->
 
+  <section class="activities">
+    <div class="container">      
+      <h2 class="activities__title">Other Activities</h2>
+      <div class="activities-wrapper">
+        <div class="card activities-wrapper__card">
+          <img src="/img/activities-1.jpg" class="card__image" alt="The curious corner of chamarel">
+          <div class="activities-card">
+            <h3 class="activities-card__title">The curious corner of chamarel</h3>
+            <button class="button activities-card__button">Book Now</button>
+          </div>
+          <!-- /.activities-card -->
+      </div>
+      <!-- /.card-->
+
+        <div class="card activities-wrapper__card">
+          <img src="/img/activities-2.jpg" class="card__image" alt="Gymkhana club golf course">
+          <div class="activities-card">
+          <h3 class="activities-card__title">Gymkhana club golf course</h3>
+          <button class="button activities-card__button">Book Now</button>
+        </div>
+        <!-- /.activities-card -->
+      </div>
+      <!-- /.card-->
+
+        <div class="card activities-wrapper__card">
+          <img src="/img/activities-3.jpg" class="card__image" alt="Tamarind falls hiking trip - full day">
+          <div class="activities-card">
+            
+            <h3 class="activities-card__title">Tamarind falls hiking trip - full day</h3>
+            <button class="button activities-card__button">Book Now</button>
+          </div>
+          <!-- /.activities-card -->
+      </div>
+      <!-- /.card-->
+
+        <div class="card activities-wrapper__card">
+          <img src="/img/activities-4.jpg" class="card__image" alt="The blue marine discovery quest">
+          <div class="activities-card">
+            
+            <h3 class="activities-card__title">The blue marine discovery quest</h3>
+            <button class="button activities-card__button">Book Now</button>
+          </div>
+          <!-- /.activities-card -->
+      </div>
+      <!-- /.card-->
+      </div>
+      <!-- /.activities-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.activities -->
 
   <script src="/js/swiper-bundle.min.js"></script>
   <script src="/js/main.js"></script>

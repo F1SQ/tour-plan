@@ -49,6 +49,11 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    &:focus
+      outline: none
+      background-color: darken(#F5FAFE, 2%)
+      color: darken($primary, 5%)
+      font-weight: 600
   &__button
     position: absolute
     min-width: 65px
@@ -61,3 +66,6 @@
     background-color: $primary
     color: $light
     border: none
+    cursor: pointer
+    &:hover
+      background-color: darken($primary, 10%)

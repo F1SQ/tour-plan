@@ -51,10 +51,22 @@
       z-index: 20
       &--prev
         left: 0
-        background-image: url(../img/arrow-prev-secondary.svg)
+        fill: #828282
+        &:hover
+          color: $primary
+          stroke: transparent
+          fill: $primary
+        &:active
+          stroke: $primary
       &--next
         right: 0
-        background-image: url(../img/arrow-next-secondary.svg)
+        fill: #828282
+        &:hover
+          color: $primary
+          stroke: transparent
+          fill: $primary
+        &:active
+          stroke: $primary
     &__profile
       display: flex
       flex-direction: column
