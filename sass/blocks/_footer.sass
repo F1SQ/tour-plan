@@ -1,0 +1,162 @@
+.footer
+  padding: 108px 165px 46px 161px
+  background: $dark
+  color: $light
+  &-wrapper
+    display: grid
+    grid-template: 250px min-content 89px 1fr min-content / 285px 285px 345px 195px
+
+  &__logo
+    grid-row: 1
+    align-self: center
+    max-width: 166px
+  &-title
+    margin: 0 0 20px 0
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 127.7%
+    text-transform: uppercase
+    &__social
+      margin: 0 41px 0 0
+    &__contact
+      margin-bottom: 34px
+    &__message
+      margin-bottom: 34px
+
+  &-item
+    &__link
+      font-weight: normal
+      font-size: 14px
+      line-height: 160%
+      text-decoration: none
+      color: $footer-text-color
+
+  &-list
+    padding: 0
+    margin: 0
+    list-style: none
+  &-categories
+    grid-row: 1 / 3
+  &-additional
+    grid-row: 1
+  &-social
+    grid-row: 2 / 3
+    grid-column: 3 / 5
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &__icons
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      width: 80px
+  &-legal
+    grid-row: 1
+  &-contact
+    grid-row: 4 / 5
+    grid-column: 1 / 3
+    &__description
+      display: inline-block
+      margin-bottom: 22px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160%
+      color: $footer-text-color
+    &__item
+      display: flex
+      justify-content: flex-start
+      align-items: flex-start
+      padding-left: 7px
+      &:not(:last-child)
+        margin-bottom: 15px
+    &__icon
+      width: 20px
+      margin-right: 17px
+      padding-top: 5px
+    &__info
+
+    &__info
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160%
+      color: $footer-text-color
+  &-message
+    grid-row: 4 / 5
+    grid-column: 3 / 5
+    display: flex
+    // flex-direction: column
+    flex-wrap: wrap
+    justify-content: flex-start
+    &__inputs
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      flex-wrap: wrap
+  &-input
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 125%
+    color: $footer-text-color
+    background-color: $light
+    border-radius: 4px
+    border: none
+    &__name
+      flex-basis: 48%
+      min-height: 50px
+      padding: 17px 23px
+      margin-bottom: 15px
+    &__number
+      flex-basis: 48%
+      min-height: 50px
+      padding: 17px 23px
+      margin-bottom: 15px
+    &__message
+      flex-basis: 100%
+      min-height: 123px
+      padding: 18px 23px
+      margin-bottom: 22px
+  &__button
+    flex-basis: 25%
+    min-width: 160px
+    min-height: 50px
+    margin-right: 52%
+    background-color: $primary
+    color: $light
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    &:hover
+      background-color: darken($primary, 10%)
+  &__clarification
+    align-self: center
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 125%
+  &-bottom
+    grid-row: 5 / 6
+    grid-column: 1 / 6
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    padding-top: 95px
+    &__text
+      display: flex
+      margin: 0 277px 0 0
+      padding: 0
+    &__item
+      list-style: none
+    &__item:not(:last-child)
+      margin-right: 20px
+    &__link
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 125%
+      text-decoration: none
+      color: $light

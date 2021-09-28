@@ -18,60 +18,6 @@
       width: 230px
       height: 230px
 
-  .packages
-    &-title
-      margin-bottom: 50px
-    &-wrapper
-      grid-template: repeat(2, 450px) / repeat(3, 1fr)
-      grid-gap: 15px
-    &-item
-      height: 450px
-      &__main
-        &__image
-          min-width: 320px
-          max-width: 320px
-          min-height: 450px
-          img
-            width: 100%
-            height: 100%
-
-      &__image
-        max-width: 100%
-        img
-          width: 100%
-          height: 100%
-
-    &-info
-      padding: 17px 20px 10px 17px
-      &__main
-        padding: 40px 20px 10px 17px
-      &__title
-        font-size: 17px
-        margin-bottom: 15px
-        &__main
-          margin-bottom: 20px
-      &__text
-        &__main
-          font-size: 13px
-          margin-bottom: 30px
-
-    &-details
-      margin-bottom: 15px
-      &__main
-        margin-bottom: 27px
-      &__description
-        margin-bottom: 9px
-        &__icon
-          margin-right: 10px
-        &__text
-          font-size: 11px
-    &-footer
-      &__price
-        &__old
-          font-size: 13px
-        &__new
-          font-size: 19px
-
 @media only screen and ( max-width: 1024px )
   .container
     max-width: 860px
@@ -84,39 +30,21 @@
     &__image
       width: 200px
       height: 200px
-
   .packages
-    &-info
-      padding: 17px 17px 10px 17px
+    &__info
+      padding: 20px 20px 25px 20px
       &__main
-        padding: 20px 17px 10px 17px
-      &__title
-        font-size: 16px
+        padding: 30px 20px 20px 40px
+    &__subtitle
+      &__main
+        margin-bottom: 18px
+    &__text
+      font-size: 12px
+      margin-bottom: 24px
+    &__details
+      &__main
         margin-bottom: 15px
-        &__main
-          margin-bottom: 25px
-      &__text
-        &__main
-          font-size: 12px
-          margin-bottom: 25px
 
-    &-details
-      &__main
-        margin-bottom: 25px
-      &__description
-        margin-bottom: 7px
-        &__icon
-          margin-right: 8px
-    &-footer
-      &__price
-        &__old
-          font-size: 12px
-        &__new
-          font-size: 18px
-      &__button
-        min-width: 100px
-        min-height: 40px
-        padding: 10px 20px
 @media only screen and ( max-width: 992px )
   .container, .newsletter-wrapper
     max-width: 760px
@@ -166,65 +94,58 @@
       width: 100%
       min-width: 339px
       height: 255px
-
   .packages
-    &-title
-      margin-bottom: 50px
-    &-wrapper
-      grid-template: repeat(3, 500px) / repeat(2, 1fr)
-      grid-gap: 30px
-    &-item
-      height: 500px
-      &__image
-        min-width: 100%
+    &-content
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 15px
       &__main
-        &__image
-          max-width: 100%
-          min-height: 100%
-
-    &-info
-      padding: 17px 20px 10px 17px
+        grid-column: 1
+        grid-row: 1
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(2, 250px)
+        border-radius: 0 0 8px 8px
+    &__image
+      height: 250px
       &__main
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        padding: 30px 20px 30px 17px
-      &__title
-        font-size: 20px
-        margin-bottom: 27px
-        &__main
-          margin-bottom: 50px
-      &__text
-        &__main
-          font-size: 15px
-          margin-bottom: 30px
-
-    &-details
-      margin-bottom: 15px
+        img
+          object-position: top
+    &__offer
+      min-width: 95px
+      min-height: 30px
+      padding: 8px 12px 7px 11px
+      font-style: normal
+      font-weight: 600
+      font-size: 12px
+      line-height: 125%
+    &__info
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 25px 20px 20px 30px
       &__main
-        margin-bottom: 35px
-      &__description
-        margin-bottom: 9px
-        &__icon
-          margin-right: 10px
-        &__text
-          font-size: 12px
-    &-footer
-      &__price
-        &__old
-          font-size: 15px
-        &__new
-          font-size: 22px
+        padding: 25px 20px 20px 30px
+    &__stars
+      display: none
+    &__subtitle
+      &__main
+        margin: 0 0 24px 0
+    &__text
+      display: none
 
 @media only screen and ( max-width: 768px )
   .container
     max-width: 700px
     width: 92%
+  .logo
+    width: 100px
   .navbar
     &-menu
       &__link
         font-size: 12px
         line-height: 107%
+  .search
+    &__input
+      width: 280px
   .stars
     flex-basis: auto
   .hotel
@@ -292,41 +213,8 @@
       height: 100%
       object-fit: cover
 
-  .packages
-    &-wrapper
-      grid-gap: 15px
-    &-item
-      &__main
-        &__image
-          min-width: 320px
-          width: 100%
-    &-info
-      &__title
-        &__main
-          font-size: 17px
-          margin-bottom: 20px
-      &__text
-        &__main
-          font-size: 12px
-          margin-bottom: 20px
-    &-details
-      &__main
-        margin-bottom: 20px
-    &-footer
-      &__price
-        min-width: 40%
-        &__old
-          &__main
-            font-size: 12px
-        &__new
-          &__main
-            font-size: 15px
-      &__button
-        // width: 45%
-        min-width: 45%
-        min-height: 30px
-        padding: 10px 7px
 @media only screen and (max-width: 576px)
+
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -348,7 +236,7 @@
         height: 1px
         background-color: $text-color
   .logo
-    width: 99px
+    width: 150px
   .hotel
     padding-bottom: 40px
     &-slider
@@ -395,66 +283,55 @@
       object-fit: cover
 
   .packages
-    &-wrapper
-      grid-template: repeat(3, 1fr) / repeat(2, 1fr)
-      grid-gap: 15px
-    &-title
-      font-size: 30px
-    &-item
-      height: 400px
+    &-content
+      grid-template-columns: 1fr
+    &-image
+      &--bottom
+        object-position: bottom
+    &__subtitle
+      font-size: 21px
       &__main
-        &__image
-          min-width: 200px
-    &-info
-      padding: 17px 20px 10px 17px
-      &__main
-        padding: 17px 19px 11px 18px
-      &__title
-        font-size: 17px
-        margin-bottom: 27px
-        &__main
-          margin-bottom: 30px
-      &__text
-        &__main
-          font-size: 12px
-          margin-bottom: 20px
-    &-details
-      margin-bottom: 15px
-      &__main
-        margin-bottom: 20px
-      &__description
-        margin-bottom: 9px
-        &__icon
-          margin-right: 10px
-        &__text
-          font-size: 12px
-    &-footer
-      &__price
-        &__old
-          font-size: 13px
-        &__new
-          font-size: 19px
-@media only screen and (max-width: 425px)
+        font-size: 21px
+    &__list
+      &-text
+        font-size: 15px
+// @media only screen and (max-width: 425px)
 
+@media only screen and (max-width: 375px)
+  .hotel
+    &-grid
+      margin: 0 -20px
   .packages
-    &-wrapper
-      grid-template: repeat(5, 400px) / 0
-      grid-gap: 15px
-    &-item
-      min-height: 400px
-    &-info
-      display: flex
-      flex-direction: column
-      justify-content: space-around
+    &-content
       &__main
-        // grid-template-columns: 1fr
-        // grid-template-rows: repeat (2, 200px)
+        grid-template-rows: repeat(2, 225px)
+        height: 450px
+        margin: 0 -20px 0 -20px
+      &__block
+        margin: 0 -20px 0 -20px
+    &__image
+      &__main
+        img
+          height: 225px
+    &__info
+      padding: 15px 15px 10px 25px
+      &__main
+        padding: 15px 15px 10px 25px
+    &__subtitle
+      font-size: 18px
+      margin: 0 0 15px 0
+      &__main
+        font-size: 18px
+        margin: 0 0 15px 0
+    &-details
+      margin-bottom: 0
+    &__list
+      &-text
+        font-size: 13px
 
-      &__text
-        &__main
-          display: none
-    &-stars
-      display: none
+  .activities
+    &-wrapper
+      margin: 0 -35px 0 -35px
 
 @media only screen and (max-width: 320px)
   .reviews
