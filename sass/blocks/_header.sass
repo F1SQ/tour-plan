@@ -22,9 +22,9 @@
     justify-content: space-between
     color: $light
     &__item
-      &:hover
-        transform: scale(1.02)
-
+      &--mobile
+        &_visible
+          display: none
     &__link
       position: relative
       color: inherit
@@ -69,7 +69,7 @@
     padding-left: 23px
     padding-right: 88px
     background-color: #F5FAFE
-    border-radius: 6px 0 0 6px
+    border-radius: 6px
     border: none
     font-size: 12px
     line-height: 15px
