@@ -22,6 +22,12 @@
       grid-column-gap: 55px
     &-bottom
       padding-top: 56px
+
+  .modal
+    &__dialog
+      width: calc(300px + (478 - 300) * ((100vw - 320px) / (1200 - 320)))
+      padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) calc(25px + (88 - 20) * ((100vw - 320px) / (1200 - 320)))
+
 @media only screen and ( max-width: 1024px )
   .container
     max-width: 860px
@@ -168,7 +174,11 @@
         margin: 0 0 24px 0
     &__text
       display: none
-
+  .modal
+    &__button
+      margin: 0 auto
+    &__clarification
+      display: none
 @media only screen and ( max-width: 768px )
   .container
     max-width: 576px
@@ -427,7 +437,9 @@
         margin: 0
       &__item:not(:last-child)
         margin-right: 4px
-
+  .modal
+    &__title
+      font-size: 16px
 @media only screen and (max-width: 425px)
   .activities
     &-wrapper

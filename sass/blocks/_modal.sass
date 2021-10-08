@@ -1,0 +1,87 @@
+.modal
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.3s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    max-width: 478px
+    padding: 33px 88px
+    background-color: $dark
+    border-radius: 8px
+    color: $light
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.3s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    right: 18px
+    top: 17px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    flex-basis: 100%
+    text-align: center
+    margin: 0 0 15px 0
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 127.7%
+    text-transform: uppercase
+  &__form
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__input
+    flex-basis: 100%
+    height: 50px
+    margin-bottom: 15px
+    padding: 18px 23px
+    color: $primary
+  &__message
+    flex-basis: 100%
+    min-height: 123px
+    resize: none
+    margin-bottom: 15px
+    padding: 18px 23px
+    border-radius: 4px
+    font-size: 12px
+    color: $primary
+  &__button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    font-weight: bold
+    // margin-right: 52%
+    background-color: $primary
+    color: $light
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    transition: all 100ms linear
+    &:hover
+      background-color: darken($primary, 10%)
+  &__clarification
+    align-self: center
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 125%
+    color: $footer-text-color

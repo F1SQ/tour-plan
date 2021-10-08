@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/aos.css">
   <link rel="stylesheet" href="/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -71,25 +72,25 @@
                 </form>
                 <!-- /.search -->
               </li>
-              <li class="navbar-menu__item">
+              <li class="navbar-menu__item" data-aos="fade-right" data-aos-duration="200" data-aos-delay="100">
                 <a href="#" class="navbar-menu__link">All Deals</a>
               </li>
-              <li class="navbar-menu__item">
+              <li class="navbar-menu__item" data-aos="fade-right" data-aos-duration="300" data-aos-delay="150">
                 <a href="#" class="navbar-menu__link">Hotels</a>
               </li>
-              <li class="navbar-menu__item">
+              <li class="navbar-menu__item" data-aos="fade-right" data-aos-duration="400" data-aos-delay="200">
                 <a href="#" class="navbar-menu__link">Activities</a>
               </li>
-              <li class="navbar-menu__item">
+              <li class="navbar-menu__item" data-aos="fade-right" data-aos-duration="500" data-aos-delay="250">
                 <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
               </li>
-              <li class="navbar-menu__item">
+              <li class="navbar-menu__item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
                 <a href="#" class="navbar-menu__link">Restaurants</a>
               </li>
-              <li class="navbar-menu__item">
+              <li class="navbar-menu__item" data-aos="fade-right" data-aos-duration="700" data-aos-delay="350">
                 <a href="#" class="navbar-menu__link">Events</a>
               </li>
-              <li class="navbar-menu__item">
+              <li class="navbar-menu__item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
                 <a href="#" class="navbar-menu__link">Rodrigues</a>
               </li>
             </ul>
@@ -140,7 +141,7 @@
                   Child Stays Free</p>
               </div>
               <!-- /.hotel-info__text -->
-              <div class="rating hotel-info__rating">
+              <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
                 <span class="rating__text">User Rattings</span>
                 <span class="rating__counter">4.5/<span class="rating__number">5</span></span>
               </div>
@@ -224,7 +225,7 @@
                     </a>
                   </div>
                   <!-- /.booking__call-center -->
-                  <button class="button booking__button">View Other Options</button>
+                  <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
                 </div>
                 <!-- /.booking -->
                 <div class="map">
@@ -247,7 +248,7 @@
           <div class="container">
             <h2 class="packages-title">Other Packages</h2>
             <div class="packages-content">
-              <div class="packages-content__main">
+              <div class="packages-content__main" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
                 <div class="packages__image__main">
                   <img src="/img/packages-image-1.jpg" alt="image of sea">
                   <span class="offer packages__offer packages__offer__main">Flash Offer</span>
@@ -314,7 +315,7 @@
               <!-- /.packages-content__main-->
       
       
-              <div class="packages-content__block">
+              <div class="packages-content__block" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
                 <div class="packages__image">
                   <img src="/img/packages-image-2.jpg" alt="image of beach">
                   <span class="offer packages__offer">Flash Offer</span>
@@ -364,7 +365,7 @@
               </div>
               <!-- /.packages-content__block-->
       
-              <div class="packages-content__block">
+              <div class="packages-content__block" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="700">
                 <div class="packages__image">
                   <img src="/img/packages-image-3.jpg" alt="image of beach">
                   <span class="offer packages__offer">Flash Offer</span>
@@ -414,7 +415,7 @@
               </div>
               <!-- /.packages-content__block-->
       
-              <div class="packages-content__block">
+              <div class="packages-content__block" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="900">
                 <div class="packages__image">
                   <img src="/img/packages-image-4.jpg" alt="image of beach">
                   <span class="offer packages__offer">Flash Offer</span>
@@ -464,7 +465,7 @@
               </div>
               <!-- /.packages-content__block-->
       
-              <div class="packages-content__block">
+              <div class="packages-content__block" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1100">
                 <div class="packages__image">
                   <img class="packages-image--bottom" src="/img/packages-image-5.jpg" alt="image of beach">
                   <span class="offer packages__offer">Flash Offer</span>
@@ -523,13 +524,13 @@
       
         <section class="newsletter">
           <div class="newsletter-wrapper">
-            <h2 class="newsletter-title newsletter__title">subscribe to our
+            <h2 class="newsletter-title newsletter__title" data-aos="fade-up-right" data-aos-duration="700">subscribe to our
               <span class="newsletter-title__strong">Newsletter</span>
             </h2>
-            <form action="#" class="subscribe newsletter__subscribe">
-              <input type="email" required class="subscribe__input" placeholder="Your email address">
+            <form action="send.php" method="POST" class="subscribe newsletter__subscribe" data-aos="fade-up-left" data-aos-duration="700">
+              <input type="email" required class="subscribe__input" placeholder="Your email address" name="email">
       
-              <button class="subscribe__button">Send</button>
+              <button class="subscribe__button" type="submit">Send</button>
             </form>
             <!-- /.newsletter -->
           </div>
@@ -660,7 +661,7 @@
           <div class="container">
             <h2 class="activities__title">Other Activities</h2>
             <div class="activities-wrapper">
-              <div class="card activities-wrapper__card">
+              <div class="card activities-wrapper__card" data-aos="flip-left" data-aos-duration="550" data-aos-delay="100">
                 <img src="/img/activities-1.jpg" class="card__image" alt="The curious corner of chamarel">
                 <div class="activities-card">
                   <h3 class="activities-card__title">The curious corner of chamarel</h3>
@@ -670,7 +671,7 @@
               </div>
               <!-- /.card-->
       
-              <div class="card activities-wrapper__card">
+              <div class="card activities-wrapper__card" data-aos="flip-left" data-aos-duration="700" data-aos-delay="200">
                 <img src="/img/activities-2.jpg" class="card__image" alt="Gymkhana club golf course">
                 <div class="activities-card">
                   <h3 class="activities-card__title">Gymkhana club golf course</h3>
@@ -680,7 +681,7 @@
               </div>
               <!-- /.card-->
       
-              <div class="card activities-wrapper__card">
+              <div class="card activities-wrapper__card" data-aos="flip-left" data-aos-duration="950" data-aos-delay="300">
                 <img src="/img/activities-3.jpg" class="card__image" alt="Tamarind falls hiking trip - full day">
                 <div class="activities-card">
       
@@ -691,7 +692,7 @@
               </div>
               <!-- /.card-->
       
-              <div class="card activities-wrapper__card">
+              <div class="card activities-wrapper__card" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="400">
                 <img src="/img/activities-4.jpg" class="card__image" alt="The blue marine discovery quest">
                 <div class="activities-card">
       
@@ -772,10 +773,10 @@
             <!-- /.footer-legal -->
 
             <div class="footer-contact">
-              <h3 class="footer-title footer-title__contact">Contact Details</h3>
-              <span class="footer-contact__description">Feel free to contact us by phone, email or by our contact form</span>
+              <h3 class="footer-title footer-title__contact" data-aos="fade-right" data-aos-duration="500">Contact Details</h3>
+              <span class="footer-contact__description" data-aos="fade-right" data-aos-duration="700">Feel free to contact us by phone, email or by our contact form</span>
 
-              <div class="footer-contact__item">
+              <div class="footer-contact__item" data-aos="fade-right" data-aos-duration="900">
                 <div class="footer-contact__icon">
                   <img src="/img/footer-icon-marker.png" alt="icon: marker">
                 </div>              
@@ -787,7 +788,7 @@
               </div>
               <!-- /.footer-contact__item -->
 
-              <div class="footer-contact__item">
+              <div class="footer-contact__item" data-aos="fade-right" data-aos-duration="1100">
                 <div class="footer-contact__icon">
                   <img src="/img/footer-icon-phonecall.png" alt="icon: phone-call">
                 </div>
@@ -801,7 +802,7 @@
               </div>
               <!-- /.footer-contact__item -->
 
-              <div class="footer-contact__item">
+              <div class="footer-contact__item" data-aos="fade-right" data-aos-duration="1200">
                 <div class="footer-contact__icon">
                   <img src="/img/footer-icon-mail.png" alt="icon: mail">
                 </div>
@@ -818,38 +819,39 @@
             <div class="footer-message">
               <h3 class="footer-title footer-title__message">Send us a message</h3>
               <!-- <div class="footer-message__inputs"> -->
-                <form action="#" class="footer-message__form">
+                <form action="send.php" method="POST" class="footer-message__form">
                   <input required 
                   type="text" 
-                  class="footer-input footer-input__name" 
-                  placeholder="Your Full Name*">
+                  class="input footer-input footer-input__name" 
+                  placeholder="Your Full Name*"
+                  name="name" data-aos="zoom-in-right" data-aos-duration="800">
+                  
                   
                   <input required 
                   type="tel" 
-                  class="footer-input footer-input__number"
+                  class="input footer-input footer-input__number"
                   placeholder="Phone Number*"
-                  inputmode="tel">
+                  inputmode="tel"
+                  name="phone" data-aos="zoom-in-left" data-aos-duration="800">
                   
                 
-                  <textarea  class="footer-input footer-input__message"  
+                  <textarea  class="input footer-input footer-input__message"  
                     placeholder="Message"
-                    required
-                    cols="30" 
-                    rows="10"></textarea>
+                    name='message'
+                    required 
+                     data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1100"></textarea>
 
-              <!-- </div>
-              /.footer-message__inputs -->
-              <button class="button footer__button">Send</button>
-              <span class="footer__clarification">* Required Fields</span>
+              <button class="button footer__button" type="submit" data-aos="zoom-in-right" data-aos-duration="800" data-aos-delay="150">Send</button>
+              <span class="footer__clarification" data-aos="zoom-in-left" data-aos-duration="800" data-aos-delay="150">* Required Fields</span>
             </div>
             <!-- /.footer-message -->
             </form>
 
             <div class="footer-bottom">
               <ul class="footer-bottom__text">              
-                <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Disclaimer</a></li>
-                <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Conditions of use</a></li>
-                <li class="footer-bottom__item"><a href="#" class="footer-bottom__link">Cancellation policy</a></li>
+                <li class="footer-bottom__item" ><a href="#" class="footer-bottom__link" >Disclaimer</a></li>
+                <li class="footer-bottom__item"><a href="#" class="footer-bottom__link" >Conditions of use</a></li>
+                <li class="footer-bottom__item"><a href="#" class="footer-bottom__link" >Cancellation policy</a></li>
               </ul>
               <!-- /.footer-bottom__text -->
               <div class="footer-bottom__icons">
@@ -865,12 +867,44 @@
         <!-- /.container -->
       </footer>
       <!-- /.footer -->
+
+      <div class="modal" id="booking-modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+          <a href="send.php" class="modal__close">
+            <img src="/img/modal-close.svg" alt="icon: close">
+          </a>
+          
+          <h3 class="modal__title">Booking</h3>
+          <!-- <div class="modal-message__inputs"> -->
+          <form action="send.php" method="POST" class="modal__form">
+            <input required type="text" class="input modal__input modal__input__name" placeholder="Your Full Name*" name="name" />
+          
+          
+            <input required type="tel" class="input modal__input modal__input__number" placeholder="Phone Number*" inputmode="tel"
+              name="phone" />
+
+            <input required type="email" class="input modal__input modal__input__number" placeholder="Email*" inputmode="email"
+            name="email" />
+          
+          
+            <textarea class="modal__input modal__message" placeholder="Message" name='message' required></textarea>
+          
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__clarification">* Required Fields</span>            
+          </form>
+        </div>
+        <!-- /.modal__dialog -->
+      </div>
+      <!-- /.modal -->
       
   </div>
   <!-- /.page -->
 
-
+  <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/swiper-bundle.min.js"></script>
+  <script src="/js/aos.js"></script>
   <script src="/js/main.js"></script>
 </body>
 

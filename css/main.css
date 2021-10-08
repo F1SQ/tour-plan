@@ -36,6 +36,16 @@ img {
   max-width: 100%;
 }
 
+.input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 125%;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -516,6 +526,8 @@ template {
   border-radius: 0 6px 6px 0;
   background-color: #EC1F46;
   cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .search__button:hover {
@@ -957,6 +969,8 @@ template {
   border: none;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .booking__button:hover {
@@ -1067,6 +1081,8 @@ template {
   color: #fff;
   border: none;
   cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .subscribe__button:hover {
@@ -1141,6 +1157,8 @@ template {
   background-color: transparent;
   cursor: pointer;
   z-index: 20;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .reviews-slider__button--prev {
@@ -1277,12 +1295,13 @@ template {
 .activities-card__button {
   font-weight: 600;
   font-size: 12px;
-  line-height: 133%;
   background-color: #EC1F46;
   color: #fff;
   padding: 7px 21px;
   cursor: pointer;
   border: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .activities-card__button:hover {
@@ -1328,18 +1347,8 @@ template {
   left: 0;
   background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
   z-index: 0;
-}
-
-.card ::before {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  border-radius: 5px;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
 .card:hover {
@@ -1569,6 +1578,8 @@ template {
   -ms-flex-item-align: end;
       align-self: flex-end;
   cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .packages__button:hover {
@@ -1630,6 +1641,8 @@ template {
   line-height: 160%;
   text-decoration: none;
   color: #BDBDBD;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .footer-item__link:hover {
@@ -1706,8 +1719,8 @@ template {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
 .footer-social__link:hover {
@@ -1774,6 +1787,8 @@ template {
 .footer-contact__link {
   text-decoration: none;
   color: #BDBDBD;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .footer-contact__link:hover {
@@ -1822,17 +1837,6 @@ template {
           align-items: stretch;
 }
 
-.footer-input {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 125%;
-  color: #BDBDBD;
-  background-color: #fff;
-  border-radius: 4px;
-  border: none;
-}
-
 .footer-input__name {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1872,11 +1876,15 @@ template {
       flex-basis: 25%;
   min-width: 160px;
   min-height: 50px;
+  padding: 18px;
+  font-weight: bold;
   background-color: #EC1F46;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .footer__button:hover {
@@ -1949,10 +1957,135 @@ template {
   line-height: 125%;
   text-decoration: none;
   color: #fff;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .footer-bottom__link:hover {
   color: #ee3759;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #0A223D;
+  border-radius: 8px;
+  color: #fff;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 127.7%;
+  text-transform: uppercase;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal__input {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  padding: 18px 23px;
+  color: #EC1F46;
+}
+
+.modal__message {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  min-height: 123px;
+  resize: none;
+  margin-bottom: 15px;
+  padding: 18px 23px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #EC1F46;
+}
+
+.modal__button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-weight: bold;
+  background-color: #EC1F46;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.modal__button:hover {
+  background-color: #c71134;
+}
+
+.modal__clarification {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 125%;
+  color: #BDBDBD;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -1985,6 +2118,10 @@ template {
   }
   .footer-bottom {
     padding-top: 56px;
+  }
+  .modal__dialog {
+    width: calc(300px + (478 - 300) * ((100vw - 320px) / (1200 - 320)));
+    padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320))) calc(25px + (88 - 20) * ((100vw - 320px) / (1200 - 320)));
   }
 }
 
@@ -2216,6 +2353,12 @@ template {
     margin: 0 0 24px 0;
   }
   .packages__text {
+    display: none;
+  }
+  .modal__button {
+    margin: 0 auto;
+  }
+  .modal__clarification {
     display: none;
   }
 }
@@ -2592,6 +2735,9 @@ template {
   }
   .footer-bottom__item:not(:last-child) {
     margin-right: 4px;
+  }
+  .modal__title {
+    font-size: 16px;
   }
 }
 
